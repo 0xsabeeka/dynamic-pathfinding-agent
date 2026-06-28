@@ -8,7 +8,9 @@ This project visualizes how an agent finds a path from a start node to a goal no
 
 The Dynamic Pathfinding Agent is a graphical AI project built with Python and Tkinter.
 
-The grid contains a fixed start position and goal position. The agent searches for a path using either A* Search or Greedy Best First Search. After the path is found, the agent moves along it. If dynamic mode is enabled and a new obstacle blocks the remaining path, the system automatically replans from the agent's current position.
+The grid contains a fixed start position and goal position. The agent searches for a path using either A* Search or Greedy Best First Search. After the path is found, the agent moves along it.
+
+If dynamic mode is enabled and a new obstacle blocks the remaining path, the system automatically replans from the agent's current position.
 
 ## Features
 
@@ -95,7 +97,7 @@ h(n) = sqrt((x1 - x2)^2 + (y1 - y2)^2)
 ```text
 dynamic-pathfinding-agent/
 │
-├── app.py
+├── main.py
 └── README.md
 ```
 
@@ -106,7 +108,7 @@ dynamic-pathfinding-agent/
 2. Run the application:
 
 ```bash
-python app.py
+python main.py
 ```
 
 3. Use the GUI to:
@@ -120,10 +122,14 @@ python app.py
 
 ## Dynamic Mode
 
-In dynamic mode, new obstacles may appear while the agent is moving. If a new obstacle blocks the remaining path, the system automatically runs the selected search algorithm again from the agent's current position.
+In dynamic mode, new obstacles may appear while the agent is moving.
+
+If a new obstacle blocks the remaining path, the system automatically runs the selected search algorithm again from the agent's current position.
 
 This simulates real-world pathfinding where the environment can change while the agent is moving.
 
 ## Conclusion
 
-This project shows how informed search algorithms work in a visual environment. A* is more reliable and performs better in complex or dynamic maps, while Greedy Best First Search can be faster in simpler cases but may produce less optimal paths.
+This project shows how informed search algorithms work in a visual environment.
+
+A* is more reliable and performs better in complex or dynamic maps, while Greedy Best First Search can be faster in simpler cases but may produce less optimal paths.
